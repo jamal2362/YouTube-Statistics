@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">YouTube Statistics</string>
+    <string name="download_failed">Download failed!</string>
+    <string name="error">Error</string>
+    <string name="fetching_data">Fetching data</string>
+    <string name="info">Info</string>
+    <string name="list_of_supported_services">List of Supported services:</string>
+    <string name="no_rating">-</string>
+    <string name="only_youtube_urls_supported">Only YouTube URL\'s are supported!</string>
+    <string name="overall_rating">Rating:</string>
+    <string name="services" translatable="false">\u25CF&#160;YouTube Video\n\u25CF&#160;YouTube Shorts\n\u25CF&#160;YouTube Music</string>
+    <string name="statistics_overview">Statistics overview</string>
+    <string name="submit">Submit</string>
+    <string name="title">Title</string>
+    <string name="unknown_title">Unknown title!</string>
+    <string name="video_dislikes">Dislikes:</string>
+    <string name="video_likes">Likes:</string>
+    <string name="views">Views:</string>
+    <string name="youtube_link_hint" translatable="false">https://youtu.be/dQw4w9WgXcQ</string>
+
+    <!-- API -->
+    <string name="api_thumbnail_url" translatable="false">thumbnail_url</string>
+    <string name="api_title" translatable="false">title</string>
+    <string name="dislikes" translatable="false">dislikes</string>
+    <string name="likes" translatable="false">likes</string>
+    <string name="rating_with_stars" translatable="false">%1\$s</string>
+    <string name="rating" translatable="false">rating</string>
+    <string name="stars" translatable="false">" / 5"</string>
+    <string name="viewcount" translatable="false">viewCount</string>
+</resources>

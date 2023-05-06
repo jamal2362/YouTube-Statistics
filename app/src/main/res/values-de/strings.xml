@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YouTube Statistiken</string>
+    <string name="download_failed">Herunterladen fehlgeschlagen!</string>
+    <string name="error">Fehler</string>
+    <string name="fetching_data">Abrufen von Daten</string>
+    <string name="info">Info</string>
+    <string name="list_of_supported_services">Liste der unterstützten Dienste:</string>
+    <string name="no_rating">-</string>
+    <string name="only_youtube_urls_supported">Only YouTube URL\'s are supported!</string>
+    <string name="overall_rating">Bewertung:</string>
+    <string name="statistics_overview">Statistik-Übersicht</string>
+    <string name="submit">Senden</string>
+    <string name="title">Titel</string>
+    <string name="unknown_title">Unbekannter Titel!</string>
+    <string name="video_dislikes">Gefällt nicht:</string>
+    <string name="video_likes">Gefällt:</string>
+    <string name="views">Aufrufe:</string>
+    <string name="youtube_link_hint" translatable="false">https://youtu.be/dQw4w9WgXcQ</string>
+</resources>

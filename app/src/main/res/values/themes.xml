@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.DynamicColors.DayNight">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:backgroundDimAmount">1.00</item>
+        <item name="colorOnSurface">?attr/colorOnSecondaryContainer</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.TextColor</item>
+    </style>
+
+    <style name="MaterialAlertDialog.TextColor" parent="">
+        <item name="android:textColor">?attr/colorOnSecondaryContainer</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CircleImageView" parent="">
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.App.CircleImageView</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+</resources>
