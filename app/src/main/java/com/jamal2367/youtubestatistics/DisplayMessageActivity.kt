@@ -71,16 +71,16 @@ class DisplayMessageActivity : AppCompatActivity() {
         }
     }
 
-    private fun getDataAPI(YouTubeLink: String?) {
+    private fun getDataAPI(youTubeLink: String?) {
         val videoID: String? = when {
-            YouTubeLink?.contains("https://youtu.be") == true -> YouTubeLink.substring(youtubeVIDEOIDSTARTINDEX, youtubeVIDEOIDENDINDEX)
-            YouTubeLink?.contains("https://youtube.com/shorts") == true -> YouTubeLink.substring(youtubeSHORTSSTARTINDEX, youtubeSHORTSENDINDEX)
-            YouTubeLink?.contains("youtube.com") == true -> YouTubeLink.split("=".toRegex(), limit = 2).getOrNull(1)
+            youTubeLink?.contains("https://youtu.be") == true -> youTubeLink.substring(youtubeVIDEOIDSTARTINDEX, youtubeVIDEOIDENDINDEX)
+            youTubeLink?.contains("https://youtube.com/shorts") == true -> youTubeLink.substring(youtubeSHORTSSTARTINDEX, youtubeSHORTSENDINDEX)
+            youTubeLink?.contains("youtube.com") == true -> youTubeLink.split("=".toRegex(), limit = 2).getOrNull(1)
             else -> null
         }
 
         val finalURL = "$apiBASEURL$apiGETVOTESQUERY$videoID"
-        val oEmbedURL = "$oEMBEDFORMATURL$YouTubeLink"
+        val oEmbedURL = "$oEMBEDFORMATURL$youTubeLink"
         val textViewLikes: TextView = findViewById(R.id.YTLikes)
         val textViewDislikes: TextView = findViewById(R.id.YTDislikes)
         val textViewViews: TextView = findViewById(R.id.YTViews)
@@ -98,7 +98,7 @@ class DisplayMessageActivity : AppCompatActivity() {
                     textViewLikes.text = addComma(myJsonObject.getString(getString(R.string.likes)))
                     textViewDislikes.text = addComma(myJsonObject.getString(getString(R.string.dislikes)))
                     textViewViews.text = addComma(myJsonObject.getString(getString(R.string.viewcount)))
-                    textViewVideoLink.text = YouTubeLink
+                    textViewVideoLink.text = youTubeLink
                     val rating = myJsonObject.getString(getString(R.string.rating))
                     textViewRatio.text = if (rating.length >= 3) {
                         "${rating.substring(0, 3)}${getString(R.string.stars)}"
@@ -160,6 +160,6 @@ class DisplayMessageActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
+        const val EXTRA_MESSAGE = "com.jamal2367.youtubestatistics.MESSAGE"
     }
 }
